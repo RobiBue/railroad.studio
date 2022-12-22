@@ -10,6 +10,7 @@ interface FrameType {
     smokestacks?: number;
     waterBoilerMax?: number;
     waterTankMax?: number;
+    paint?: number;
 }
 
 const frameTypeBoxcar: FrameType = {
@@ -27,6 +28,19 @@ const frameTypeCaboose: FrameType = {
     name_lines: 1,
     number_length: 12,
     number_lines: 1,
+};
+
+const frameTypeClass48: FrameType = {
+    firewood: 1350,
+    headlights: 2,
+    length: 938.9,
+    name_length: 20,
+    name_lines: 3,
+    number_length: 4,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 3,
+    waterBoilerMax: 6000,
 };
 
 const frameTypeClass70: FrameType = {
@@ -86,6 +100,32 @@ const frameTypeCooke260Tender: FrameType = {
     number_length: 6,
     number_lines: 1,
     waterTankMax: 9500,
+};
+
+
+const frameTypeCooke280: FrameType = {
+    headlights: 3,
+    length: 837.83,
+    name_length: 12,
+    name_lines: 1,
+    number_length: 3,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 4,
+    waterBoilerMax: 5000,
+    paint: 5,
+};
+
+const frameTypeCooke280Tender: FrameType = {
+    firewood: 1460,
+    headlights: 3,
+    length: 641.73,
+    name_length: 11,
+    name_lines: 1,
+    number_length: 6,
+    number_lines: 1,
+    waterTankMax: 9500,
+    paint: 5,
 };
 
 const frameTypeEureka: FrameType = {
@@ -150,6 +190,30 @@ const frameTypeFlatcarTanker: FrameType = {
     number_lines: 1,
 };
 
+const frameTypeGlenbrook: FrameType = {
+    headlights: 3,
+    length: 837.83,
+    name_length: 12,
+    name_lines: 1,
+    number_length: 3,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 5,
+    waterBoilerMax: 5000,
+    paint: 6,
+};
+
+const frameTypeGlenbrookTender: FrameType = {
+    firewood: 1460,
+    headlights: 3,
+    length: 641.73,
+    name_length: 11,
+    name_lines: 1,
+    number_length: 6,
+    number_lines: 1,
+    waterTankMax: 9500,
+};
+
 const frameTypeHandcard: FrameType = {
     length: 220.2,
     name_length: 18,
@@ -170,6 +234,54 @@ const frameTypeHeisler: FrameType = {
     smokestacks: 2,
     waterBoilerMax: 5000,
     waterTankMax: 3000,
+};
+
+const frameTypeMontezuma: FrameType = {
+    headlights: 2,
+    length: 837.83,
+    name_length: 12,
+    name_lines: 1,
+    number_length: 3,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 3,
+    waterBoilerMax: 5000,
+    paint: 2,
+};
+
+const frameTypeMontezumaTender: FrameType = {
+    firewood: 1460,
+    headlights: 2,
+    length: 641.73,
+    name_length: 11,
+    name_lines: 1,
+    number_length: 6,
+    number_lines: 1,
+    waterTankMax: 9500,
+    paint: 2
+};
+
+const frameTypeMosca: FrameType = {
+    headlights: 3,
+    length: 837.83,
+    name_length: 12,
+    name_lines: 1,
+    number_length: 3,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 5,
+    waterBoilerMax: 5000,
+};
+
+const frameTypeMoscaTender: FrameType = {
+    firewood: 1460,
+    headlights: 3,
+    length: 641.73,
+    name_length: 11,
+    name_lines: 1,
+    number_length: 6,
+    number_lines: 1,
+    waterTankMax: 9500,
 };
 
 const frameTypePorter040: FrameType = {
@@ -200,14 +312,49 @@ const frameTypePorter042: FrameType = {
     waterTankMax: 800,
 };
 
+const frameTypeShay: FrameType = {
+    firewood: 164,
+    headlights: 3,
+    length: 461.35,
+    name_length: 12,
+    name_lines: 1,
+    number_length: 2,
+    number_lines: 1,
+    sandLevelMax: 100,
+    smokestacks: 4,
+    waterBoilerMax: 500,
+    waterTankMax: 800,
+    paint: 3,
+};
+
+const frameTypeSnowplow: FrameType = {
+    length: 450,
+    name_length: 10,
+    name_lines: 2,
+    number_length: 4,
+    number_lines: 1,
+    paint: 4,
+};
+
+const frameTypeWaycar: FrameType = {
+    firewood: 15,
+    length: 679.0,
+    name_length: 20,
+    name_lines: 1,
+    number_length: 12,
+    number_lines: 1,
+};
 export const frameLimits: { [key: string]: FrameType } = {
     boxcar: frameTypeBoxcar,
     caboose: frameTypeCaboose,
+    class48: frameTypeClass48,
     class70: frameTypeClass70,
     class70_tender: frameTypeClass70Tender,
     climax: frameTypeClimax,
     cooke260: frameTypeCooke260,
     cooke260_tender: frameTypeCooke260Tender,
+    cooke280: frameTypeCooke280,
+    cooke280_tender: frameTypeCooke280Tender,
     eureka: frameTypeEureka,
     eureka_tender: frameTypeEurekaTender,
     flatcar_cordwood: frameTypeFlatcarCordwood,
@@ -215,10 +362,19 @@ export const frameLimits: { [key: string]: FrameType } = {
     flatcar_logs: frameTypeFlatcarLogs,
     flatcar_stakes: frameTypeFlatcarStakes,
     flatcar_tanker: frameTypeFlatcarTanker,
+    glenbrook: frameTypeGlenbrook,
+    glenbrook_tender: frameTypeGlenbrookTender,
     handcar: frameTypeHandcard,
     heisler: frameTypeHeisler,
+    montezuma: frameTypeMontezuma,
+    montezuma_tender: frameTypeMontezumaTender,
+    mosca: frameTypeMosca,
+    mosca_tender: frameTypeMoscaTender,
     porter_040: frameTypePorter040,
     porter_042: frameTypePorter042,
+    shay: frameTypeShay,
+    snowplow: frameTypeSnowplow,
+    waycar: frameTypeWaycar,
 };
 
 export const cargoLimits: { [key: string]: { [key: string]: number } } = {

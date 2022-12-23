@@ -31,16 +31,16 @@ const frameTypeCaboose: FrameType = {
 };
 
 const frameTypeClass48: FrameType = {
-    firewood: 1350,
+    firewood: 70,
     headlights: 2,
-    length: 938.9,
+    length: 760.0,
     name_length: 20,
     name_lines: 3,
     number_length: 4,
     number_lines: 1,
     sandLevelMax: 100,
     smokestacks: 3,
-    waterBoilerMax: 6000,
+    waterBoilerMax: 5000,
 };
 
 const frameTypeClass70: FrameType = {
@@ -105,7 +105,7 @@ const frameTypeCooke260Tender: FrameType = {
 
 const frameTypeCooke280: FrameType = {
     headlights: 3,
-    length: 837.83,
+    length: 870.0,
     name_length: 12,
     name_lines: 1,
     number_length: 3,
@@ -117,9 +117,9 @@ const frameTypeCooke280: FrameType = {
 };
 
 const frameTypeCooke280Tender: FrameType = {
-    firewood: 1460,
+    firewood: 1428,
     headlights: 3,
-    length: 641.73,
+    length: 625.0,
     name_length: 11,
     name_lines: 1,
     number_length: 6,
@@ -204,14 +204,14 @@ const frameTypeGlenbrook: FrameType = {
 };
 
 const frameTypeGlenbrookTender: FrameType = {
-    firewood: 1460,
+    firewood: 798,
     headlights: 3,
-    length: 641.73,
+    length: 505.0,
     name_length: 11,
     name_lines: 1,
     number_length: 6,
     number_lines: 1,
-    waterTankMax: 9500,
+    waterTankMax: 3800,
 };
 
 const frameTypeHandcard: FrameType = {
@@ -238,7 +238,7 @@ const frameTypeHeisler: FrameType = {
 
 const frameTypeMontezuma: FrameType = {
     headlights: 2,
-    length: 837.83,
+    length: 680.0,
     name_length: 12,
     name_lines: 1,
     number_length: 3,
@@ -250,20 +250,20 @@ const frameTypeMontezuma: FrameType = {
 };
 
 const frameTypeMontezumaTender: FrameType = {
-    firewood: 1460,
+    firewood: 470,
     headlights: 2,
-    length: 641.73,
+    length: 420.0,
     name_length: 11,
     name_lines: 1,
     number_length: 6,
     number_lines: 1,
-    waterTankMax: 9500,
+    waterTankMax: 5900,
     paint: 2
 };
 
 const frameTypeMosca: FrameType = {
     headlights: 3,
-    length: 837.83,
+    length: 873.0,
     name_length: 12,
     name_lines: 1,
     number_length: 3,
@@ -274,14 +274,14 @@ const frameTypeMosca: FrameType = {
 };
 
 const frameTypeMoscaTender: FrameType = {
-    firewood: 1460,
+    firewood: 854,
     headlights: 3,
-    length: 641.73,
+    length: 530.0,
     name_length: 11,
     name_lines: 1,
     number_length: 6,
     number_lines: 1,
-    waterTankMax: 9500,
+    waterTankMax: 3800,
 };
 
 const frameTypePorter040: FrameType = {
@@ -313,9 +313,9 @@ const frameTypePorter042: FrameType = {
 };
 
 const frameTypeShay: FrameType = {
-    firewood: 164,
+    firewood: 277,
     headlights: 3,
-    length: 461.35,
+    length: 800.0,
     name_length: 12,
     name_lines: 1,
     number_length: 2,
@@ -328,7 +328,7 @@ const frameTypeShay: FrameType = {
 };
 
 const frameTypeSnowplow: FrameType = {
-    length: 450,
+    length: 610.0,
     name_length: 10,
     name_lines: 2,
     number_length: 4,
@@ -338,11 +338,12 @@ const frameTypeSnowplow: FrameType = {
 
 const frameTypeWaycar: FrameType = {
     firewood: 15,
-    length: 679.0,
-    name_length: 20,
+    length: 615.0,
+    name_length: 21,
     name_lines: 1,
     number_length: 12,
     number_lines: 1,
+    paint: 13
 };
 export const frameLimits: { [key: string]: FrameType } = {
     boxcar: frameTypeBoxcar,

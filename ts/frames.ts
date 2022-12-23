@@ -31,7 +31,7 @@ const frameTypeCaboose: FrameType = {
 };
 
 const frameTypeClass48: FrameType = {
-    firewood: 70,
+    firewood: 338,
     headlights: 2,
     length: 760.0,
     name_length: 20,
